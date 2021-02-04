@@ -1,0 +1,31 @@
+(1, 2, 1): SDP solved, primal-dual feasible, #terms = 3, degrees = {2}
+(1, 2, 2): SDP solved, primal-dual feasible, #terms = 4, degrees = {2}
+(1, 2, 3): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 4): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 5): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 6): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 7): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 8): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 9): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 10): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 3, 1): SDP solved, primal-dual feasible, #terms = 6, degrees = {2}
+(1, 3, 2): SDP solved, primal-dual feasible, #terms = 21, degrees = {2}
+(1, 3, 3): SDP solved, primal-dual feasible, #terms = 10, degrees = {2}
+(1, 3, 4): SDP solved, primal-dual feasible, #terms = 5, degrees = {2}
+(1, 3, 5): SDP solved, primal-dual feasible, #terms = 5, degrees = {2}
+
+(1, 2, 1): SDP solved, primal-dual feasible, #terms = 3, degrees = {2}
+(1, 2, 2): SDP solved, primal-dual feasible, #terms = 4, degrees = {2}
+(1, 2, 3): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 4): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 2, 5): SDP solved, primal-dual feasible, #terms = 2, degrees = {2}
+(1, 3, 1): SDP solved, primal-dual feasible, #terms = 6, degrees = {2}
+(1, 3, 2): SDP solved, primal-dual feasible, #terms = 21, degrees = {2}
+(1, 3, 3): SDP solved, primal-dual feasible, #terms = 10, degrees = {2}
+(1, 3, 4): SDP solved, primal-dual feasible, #terms = 5, degrees = {2}
+(1, 3, 5): SDP solved, primal-dual feasible, #terms = 5, degrees = {2}
+(1, 4, 1): SDP solved, primal-dual feasible, #terms = 10, degrees = {2}
+(1, 4, 2): SDP solved, primal-dual feasible, #terms = 36, degrees = {2}
+(1, 4, 3): SDP solved, primal-dual feasible, #terms = 78, degrees = {2}
+(1, 4, 4): SDP solved, primal-dual feasible, #terms = 18, degrees = {2}
+(1, 4, 5): 
