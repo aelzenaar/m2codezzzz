@@ -8,6 +8,7 @@
 --
 
 needsPackage "SumsOfSquares"
+changeSolver("MOSEK","/Users/aelz176/Desktop/mosek/9.2/tools/platform/osx64x86/bin/mosek")
 
 kk = QQ
 kkDim = 1
@@ -18,12 +19,12 @@ computeCoefficient =
               (0..(t-1)),
               i -> (reDim + 2*i)/(reDim*d + 2*i) )
 
--- parameters to list (t,d,n)
-params = [(1,2,2),(1,3,3),(2,2,3),(2,3,6),(2,4,12),(2,5,20),(2,6,24),(2,7,28),
-          (3,2,4),(3,3,16)]
+-- parameters to list (t,d,n); note d = 1 is trivial
+params = sort toList((set (1..10)**set(2..10)**set({1}))/splice)
 
 for i in params do (
   t = i_0; d = i_1; n = i_2;
+  << "(" << t << ", " << d << ", " << n << "): " << flush;
   c = computeCoefficient (n, d, t, kkDim);
 
   symbols = (x_1 .. x_(d*n));
@@ -41,11 +42,9 @@ for i in params do (
   definingPolynomial = q - c*p^2;
 
   result = solveSOS(definingPolynomial);
-  << "(" << t << ", " << d << ", " << n << "): " << result#Status;
   cleanedSOS = clean(1e-5,sosPoly result);
-  << ", #terms = " << length cleanedSOS;
-  << ", #terms/term = " << (for term in gens cleanedSOS list length terms term);
-  << ", degree = " << first degree (gens cleanedSOS)_1;
+  << result#Status << ", #terms = " << length cleanedSOS;
+  << ", degrees = " << unique ((gens cleanedSOS)/degree/first);
   << "\n" << flush;
 )
 
